@@ -16,7 +16,7 @@ const Comics = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `http://gateway.marvel.com/v1/public/comics?apikey=${publicKey}&ts=${timestamp}&hash=${hash}&offset=${offset}&limit=${limit}`
+          `https://gateway.marvel.com/v1/public/comics?apikey=${publicKey}&ts=${timestamp}&hash=${hash}&offset=${offset}&limit=${limit}`
         )
         const data = await response.json()
         setComics(data.data.results)
