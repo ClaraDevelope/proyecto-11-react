@@ -1,0 +1,9 @@
+.title {
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  color: #a94700;
+  /* text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #fff,
+    0 0 20px #49ff18, 0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18,
+    0 0 75px #4aff18, 2px 2px 2px rgba(206, 89, 55, 0); */
+}

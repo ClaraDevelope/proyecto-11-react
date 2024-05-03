@@ -1,0 +1,34 @@
+.card {
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.762);
+  cursor: pointer;
+  transition: ease-in-out.5s;
+}
+.card > h3 {
+  padding: 0.5rem;
+  text-align: center;
+}
+.card > div {
+  border-radius: 20px;
+  max-height: 180px;
+  max-width: 200px;
+}
+.card > div > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card:hover {
+  box-shadow: 0 0 1px #ffffffab, 0 0 5px #ffffffb2, 0 0 5px #ffffffb1,
+    0 0 10px #8418ff, 0 0 8px #49ff18, 0 0 8px #8418ff, 0 0 8px #8418ff,
+    0 0 10px #8418ff, 2px 2px 2px rgba(206, 89, 55, 0);
+}
