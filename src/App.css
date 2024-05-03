@@ -12,3 +12,8 @@
   background-size: cover;
   color: rgb(204, 194, 194);
 }
+@media (max-width: 540px) {
+  .principal {
+    background-size: cover;
+  }
+}
