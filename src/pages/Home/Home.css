@@ -7,6 +7,7 @@
   --purple-color: #65086f;
 }
 .home-container {
+  overflow: hidden;
   max-width: 100%;
   height: 86.4vh;
   max-height: 100vh;
@@ -27,8 +28,8 @@
 .home-title {
   width: 80%;
   color: #181818;
-  font-size: 4rem;
-  padding: 0 5rem;
+  font-size: 60px;
+  padding: 0 7rem;
   /* padding: 19rem 0 0 15rem; */
   text-align: center;
   /* font-family: 'Jaro', sans-serif; */
@@ -37,7 +38,7 @@
     -3px -3px 0 #efebeb4a, 3px -3px 10px #000;
 }
 .button-container-home {
-  margin: 0.5rem 0.5rem;
+  margin: 2rem 0.5rem;
   display: flex;
   width: 100%;
   justify-content: center;
