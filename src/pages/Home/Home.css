@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=News+Cycle:wght@400;700&family=Permanent+Marker&family=Righteous&display=swap');
+:root {
+  --button-color-bck: #ff7614;
+  --black-color: #0b0808;
+  --color-text-light: #d8d3d3;
+  --shadows-color: rgba(0, 0, 0, 0.75);
+  --purple-color: #65086f;
+}
+.home-container {
+  width: 100%;
+  height: 86.4vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(82, 7, 87, 0.341);
+  /* background-image: url('https://i0.wp.com/es.moyens.net/wp-content/uploads/2023/01/1674146527_370_9-impresionantes-fondos-de-pantalla-HD-de-Avengers-Infinity-War.png?resize=1170%2C658&ssl=1'); */
+  background-image: url('https://www.todofondos.net/wp-content/uploads/marvel-4k-obra-de-arte-1440p-resolucion-hd-4k-fondo-de-pantalla.jpg');
+  /* background-image: url('https://www.creativefabrica.com/wp-content/uploads/2023/01/07/Groot-In-A-Fairytale-Landscape-56736654-1.png'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.home-title {
+  color: #181818;
+  font-size: 4rem;
+  margin: 19rem 0 0 15rem;
+  text-align: center;
+  /* font-family: 'Jaro', sans-serif; */
+  -webkit-text-stroke: 1px var(--color-text-light);
+  text-shadow: 3px 3px 0 #fffefe37, -3px 3px 5px var(--purple-color),
+    -3px -3px 0 #efebeb4a, 3px -3px 10px #000;
+}
+.button-container-home {
+  padding: 1rem 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+.home-button {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #b5121d;
+  /* background-color: var(--purple-color); */
+  color: #fff;
+  -webkit-text-stroke: 0.3px #fff;
+  /* color: var(--color-text-light); */
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.home-button:hover {
+  background-color: #86060f;
+}

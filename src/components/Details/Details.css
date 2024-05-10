@@ -1,0 +1,32 @@
+:root {
+  --button-color-bck: #ff7614;
+  --black-color: #0b0808;
+  --color-text-light: #d8d3d3;
+  --shadows-color: rgba(0, 0, 0, 0.75);
+}
+.details-container {
+  height: 100svh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-text-light);
+  align-self: center;
+}
+.image-container-detail {
+  max-height: 400px;
+  max-width: 400px;
+}
+.image-container-detail > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.details-description {
+  max-width: 600px;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+}

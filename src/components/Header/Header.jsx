@@ -10,7 +10,8 @@ const Header = () => {
         />
       </div>
       <nav className='nav'>
-        <NavLink to=''>Inicio</NavLink>
+        <NavLink to=''>Home</NavLink>
+        <NavLink to='characters'>Characters</NavLink>
         <NavLink to='comics'>Comics</NavLink>
         <NavLink to='series'>Series</NavLink>
       </nav>

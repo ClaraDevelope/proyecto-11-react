@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types'
 import './Button.css'
-const Button = ({ text, image, action }) => {
+
+const Button = ({ text, image, action, disabled }) => {
   return (
-    <button onClick={action}>
+    <button onClick={action} disabled={disabled}>
       {image ? <img src={image} alt={text} /> : text}
     </button>
   )
@@ -11,7 +12,8 @@ const Button = ({ text, image, action }) => {
 Button.propTypes = {
   text: PropTypes.string.isRequired,
   image: PropTypes.string,
-  action: PropTypes.func.isRequired
+  action: PropTypes.func.isRequired,
+  disabled: PropTypes.bool // Propiedad disabled
 }
 
 export default Button
