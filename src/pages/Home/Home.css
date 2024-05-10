@@ -24,9 +24,11 @@
   align-items: start;
 }
 .home-title {
+  width: 80%;
   color: #181818;
   font-size: 4rem;
-  margin: 19rem 0 0 15rem;
+  padding: 0 5rem;
+  /* padding: 19rem 0 0 15rem; */
   text-align: center;
   /* font-family: 'Jaro', sans-serif; */
   -webkit-text-stroke: 1px var(--color-text-light);
