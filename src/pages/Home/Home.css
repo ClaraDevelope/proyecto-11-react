@@ -30,9 +30,7 @@
   color: #181818;
   font-size: 60px;
   padding: 0 7rem;
-  /* padding: 19rem 0 0 15rem; */
   text-align: center;
-  /* font-family: 'Jaro', sans-serif; */
   -webkit-text-stroke: 1px var(--color-text-light);
   text-shadow: 3px 3px 0 #fffefe37, -3px 3px 5px var(--purple-color),
     -3px -3px 0 #efebeb4a, 3px -3px 10px #000;
@@ -66,5 +64,6 @@
   .home-title {
     padding: 0;
     margin: 0;
+    width: 100%;
   }
 }
