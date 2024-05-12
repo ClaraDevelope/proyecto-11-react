@@ -5,7 +5,6 @@ import './index.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home/Home.jsx'
 import Comics from './pages/Comics/Comics.jsx'
-import Series from './pages/Series/Series.jsx'
 import NotFound from './pages/404/NotFound.jsx'
 import Details from './components/Details/Details.jsx'
 import Characters from './pages/Characters/Characters.jsx'
@@ -23,7 +22,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           />
           <Route path='/comics' element={<Comics />} />
           <Route path='/comics/:id' element={<Details entityType='comics' />} />
-          <Route path='/series' element={<Series />} />
           <Route path='/series/:id' element={<Details entityType='series' />} />
           <Route path='*' element={<NotFound />} />
         </Route>

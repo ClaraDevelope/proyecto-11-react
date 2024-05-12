@@ -4,6 +4,7 @@ import Card from '../../components/Card/Card'
 import Loading from '../../components/Loading/Loading'
 import Title from '../../components/Title/Title'
 import { hash, publicKey, timestamp } from '../../utils/constants'
+import Footer from '../../components/Footer/Footer'
 
 const Characters = () => {
   const [character, setCharacter] = useState([])
@@ -70,6 +71,7 @@ const Characters = () => {
           disabled={offset + limit >= totalResults}
         />
       </div>
+      <Footer />
     </div>
   )
 }

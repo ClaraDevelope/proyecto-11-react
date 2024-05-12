@@ -1,0 +1,8 @@
+footer {
+  color: rgb(204, 194, 194);
+  -webkit-text-stroke: 0.5px rgb(204, 194, 194);
+  width: 100%;
+}
+footer > p {
+  text-align: center;
+}

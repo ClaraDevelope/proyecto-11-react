@@ -1,3 +1,4 @@
+import Footer from '../../components/Footer/Footer'
 import './Home.css'
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
         <button className='home-button'>Comics</button>
         <button className='home-button'>Series</button>
       </div>
+      <Footer />
     </div>
   )
 }

@@ -13,7 +13,6 @@ const Header = () => {
         <NavLink to=''>Home</NavLink>
         <NavLink to='characters'>Characters</NavLink>
         <NavLink to='comics'>Comics</NavLink>
-        <NavLink to='series'>Series</NavLink>
       </nav>
     </header>
   )
