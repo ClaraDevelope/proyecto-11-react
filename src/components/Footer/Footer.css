@@ -21,3 +21,8 @@ footer > p {
   text-align: start;
   margin: 6px;
 }
+@media screen and (max-width: 750px) {
+  footer {
+    bottom: 0.5rem;
+  }
+}
