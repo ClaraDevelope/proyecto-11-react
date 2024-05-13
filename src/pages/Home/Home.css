@@ -67,7 +67,8 @@
   }
   .home-container {
     justify-content: flex-start;
-    height: 79vh;
+    /* height: 79vh; */
+    height: 650px;
   }
   .button-container-home {
     margin: 1.5rem 0;
