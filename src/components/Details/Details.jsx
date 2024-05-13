@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { hash, publicKey, timestamp } from '../../utils/constants'
 import './Details.css'
 import { useParams } from 'react-router-dom'
-import Footer from '../Footer/Footer'
 
 const Details = ({ entityType }) => {
   const { id } = useParams()
@@ -52,7 +51,6 @@ const Details = ({ entityType }) => {
           {result.series.name}
         </p>
       )}
-      <Footer />
     </div>
   )
 }
