@@ -2,8 +2,6 @@
   position: absolute;
   top: 70px;
   left: 35%;
-  /* width: 150px;
-  max-height: 150px; */
 }
 #loading {
   width: 100%;
@@ -16,6 +14,8 @@
     position: absolute;
     top: 25%;
     bottom: 0;
-    left: 30%;
+    left: 25%;
+    width: 200px;
+    max-height: 200px;
   }
 }
