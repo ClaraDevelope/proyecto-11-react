@@ -17,11 +17,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dc6f97dd-d0c6-4afe-9db9-d015edcc5725/dd4w03g-0141edf3-d5fa-41d0-89ed-1a499ed1f2fe.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RjNmY5N2RkLWQwYzYtNGFmZS05ZGI5LWQwMTVlZGNjNTcyNVwvZGQ0dzAzZy0wMTQxZWRmMy1kNWZhLTQxZDAtODllZC0xYTQ5OWVkMWYyZmUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Eh2vWyXCQX9-LGtdII2FPTbZF4ghlJXRl2SwV4ZdyKQ'); */
-  /* background-image: url('https://i.pinimg.com/236x/a3/d6/df/a3d6dfd1a53755068d91acf337df1864.jpg'); */
-  background-image: url('https://i.pinimg.com/236x/45/e2/1e/45e21e656f1fbc081c24188a4d638625.jpg');
+  /* background-image: url('https://i.pinimg.com/236x/45/e2/1e/45e21e656f1fbc081c24188a4d638625.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   color: var(--color-text-light);
 }
 @media (max-width: 540px) {

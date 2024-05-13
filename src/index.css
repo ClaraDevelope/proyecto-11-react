@@ -27,6 +27,9 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  background-image: url('https://i.pinimg.com/236x/45/e2/1e/45e21e656f1fbc081c24188a4d638625.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media screen and (max-width: 750px) {
   body {
