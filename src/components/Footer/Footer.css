@@ -21,8 +21,8 @@ footer > p {
   text-align: start;
   margin: 6px;
 }
-/* @media screen and (max-width: 800px) {
-  footer {
-    bottom: 0.5rem;
+@media screen and (max-width: 550px) {
+  footer > p {
+    text-align: center;
   }
-} */
+}
