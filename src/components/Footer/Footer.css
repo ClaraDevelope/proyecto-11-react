@@ -15,14 +15,14 @@ footer {
   -webkit-text-stroke: 0.5px var(--color-text-light);
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: 0.5rem;
 }
 footer > p {
   text-align: start;
   margin: 6px;
 }
-@media screen and (max-width: 750px) {
+/* @media screen and (max-width: 800px) {
   footer {
     bottom: 0.5rem;
   }
-}
+} */

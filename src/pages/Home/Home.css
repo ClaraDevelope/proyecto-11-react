@@ -59,7 +59,7 @@
 .home-button:hover {
   background-color: var(--shadow-red);
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 555px) {
   .home-title {
     padding: 0;
     margin: 0;
