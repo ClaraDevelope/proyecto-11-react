@@ -1,9 +1,9 @@
 .loading-container {
   position: absolute;
-  top: 120px;
-  left: 45%;
-  width: 150px;
-  max-height: 150px;
+  top: 70px;
+  left: 35%;
+  /* width: 150px;
+  max-height: 150px; */
 }
 #loading {
   width: 100%;
