@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 import './Button.css'
 
 const Button = ({ text, image, action, disabled, link, className }) => {
@@ -6,11 +7,11 @@ const Button = ({ text, image, action, disabled, link, className }) => {
 
   if (link) {
     return (
-      <a href={link}>
+      <Link to={link}>
         <button onClick={action} disabled={disabled} className={className}>
           {buttonContent}
         </button>
-      </a>
+      </Link>
     )
   }
 

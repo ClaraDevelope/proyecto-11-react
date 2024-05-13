@@ -12,7 +12,7 @@ const Characters = () => {
   const [offset, setOffset] = useState(0)
   const [loading, setLoading] = useState(true)
   const limit = 12
-
+  // Limpiar el characters cada vez que se llame a la api
   useEffect(() => {
     const fetchData = async () => {
       try {
