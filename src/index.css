@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=News+Cycle:wght@400;700&family=Permanent+Marker&family=Righteous&display=swap');
+
 :root {
   --button-color-bck: #ff7614;
   --black-color: #0b0808;
+  --black-color-2: #181818;
   --color-text-light: #d8d3d3;
+  --shadow-title: #efebeb4a;
   --shadows-color: rgba(0, 0, 0, 0.75);
+  --purple-color: #65086f;
+  --bck-purple: rgba(82, 7, 87, 0.341);
+  --red: #b5121d;
+  --shadow-red: #86060f;
 }
 * {
   margin: 0;
@@ -13,4 +20,11 @@
 a {
   text-decoration: none;
   color: var(--color-text-light);
+  cursor: pointer;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }

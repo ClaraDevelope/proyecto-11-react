@@ -22,7 +22,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           />
           <Route path='/comics' element={<Comics />} />
           <Route path='/comics/:id' element={<Details entityType='comics' />} />
-          <Route path='/series/:id' element={<Details entityType='series' />} />
           <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>

@@ -19,9 +19,6 @@ const Details = ({ entityType }) => {
       case 'comics':
         requestUrl = `https://gateway.marvel.com/v1/public/comics/${numericId}?apikey=${publicKey}&ts=${timestamp}&hash=${hash}`
         break
-      case 'series':
-        requestUrl = `https://gateway.marvel.com/v1/public/series/${numericId}?apikey=${publicKey}&ts=${timestamp}&hash=${hash}`
-        break
       default:
         break
     }

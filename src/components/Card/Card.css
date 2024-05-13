@@ -1,3 +1,15 @@
+:root {
+  --button-color-bck: #ff7614;
+  --black-color: #0b0808;
+  --black-color-2: #181818;
+  --color-text-light: #d8d3d3;
+  --shadow-title: #efebeb4a;
+  --shadows-color: rgba(0, 0, 0, 0.75);
+  --purple-color: #65086f;
+  --bck-purple: rgba(82, 7, 87, 0.341);
+  --red: #b5121d;
+  --shadow-red: #86060f;
+}
 .card {
   width: 250px;
   height: 300px;
@@ -6,8 +18,8 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  border-radius: 20px;
-  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.762);
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px 0px var(--shadows-color);
   cursor: pointer;
   transition: ease-in-out.5s;
 }

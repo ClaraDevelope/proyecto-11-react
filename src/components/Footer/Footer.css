@@ -1,8 +1,26 @@
+:root {
+  --button-color-bck: #ff7614;
+  --black-color: #0b0808;
+  --black-color-2: #181818;
+  --color-text-light: #d8d3d3;
+  --shadow-title: #efebeb4a;
+  --shadows-color: rgba(0, 0, 0, 0.75);
+  --purple-color: #65086f;
+  --bck-purple: rgba(82, 7, 87, 0.341);
+  --red: #b5121d;
+  --shadow-red: #86060f;
+}
 footer {
-  color: rgb(204, 194, 194);
-  -webkit-text-stroke: 0.5px rgb(204, 194, 194);
+  color: var(--color-text-light);
+  -webkit-text-stroke: 0.5px var(--color-text-light);
   width: 100%;
+  position: absolute;
+  bottom: 0;
+  /* position: fixed;
+  bottom: 0;
+  left: 0; */
 }
 footer > p {
-  text-align: center;
+  text-align: start;
+  margin: 10px;
 }

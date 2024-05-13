@@ -5,7 +5,7 @@ import Loading from '../../components/Loading/Loading'
 import Title from '../../components/Title/Title'
 import { hash, publicKey, timestamp } from '../../utils/constants'
 import Footer from '../../components/Footer/Footer'
-
+// Esta página tiene rutas de paginación pero no funciona bien puesto que no se actualiza la página
 const Characters = () => {
   const [character, setCharacter] = useState([])
   const [totalResults, setTotalResults] = useState(0)
@@ -17,6 +17,7 @@ const Characters = () => {
     const fetchData = async () => {
       try {
         setLoading(true)
+
         const response = await fetch(
           `https://gateway.marvel.com/v1/public/characters?apikey=${publicKey}&ts=${timestamp}&hash=${hash}&offset=${offset}&limit=${limit}`
         )
@@ -64,11 +65,17 @@ const Characters = () => {
         )}
       </ul>
       <div className='button-container'>
-        <Button text={'Anterior'} action={prevPage} disabled={offset === 0} />
+        <Button
+          text={'Anterior'}
+          action={prevPage}
+          disabled={offset === 0}
+          className='button'
+        />
         <Button
           text={'Siguiente'}
           action={nextPage}
           disabled={offset + limit >= totalResults}
+          className='button'
         />
       </div>
       <Footer />

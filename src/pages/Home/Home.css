@@ -2,9 +2,14 @@
 :root {
   --button-color-bck: #ff7614;
   --black-color: #0b0808;
+  --black-color-2: #181818;
   --color-text-light: #d8d3d3;
+  --shadow-title: #efebeb4a;
   --shadows-color: rgba(0, 0, 0, 0.75);
   --purple-color: #65086f;
+  --bck-purple: rgba(82, 7, 87, 0.341);
+  --red: #b5121d;
+  --shadow-red: #86060f;
 }
 .home-container {
   overflow: hidden;
@@ -13,10 +18,7 @@
   max-height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: rgba(82, 7, 87, 0.341);
-  /* background-image: url('https://i0.wp.com/es.moyens.net/wp-content/uploads/2023/01/1674146527_370_9-impresionantes-fondos-de-pantalla-HD-de-Avengers-Infinity-War.png?resize=1170%2C658&ssl=1'); */
   background-image: url('https://www.todofondos.net/wp-content/uploads/marvel-4k-obra-de-arte-1440p-resolucion-hd-4k-fondo-de-pantalla.jpg');
-  /* background-image: url('https://www.creativefabrica.com/wp-content/uploads/2023/01/07/Groot-In-A-Fairytale-Landscape-56736654-1.png'); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -26,14 +28,13 @@
   align-items: start;
 }
 .home-title {
-  width: 80%;
-  color: #181818;
+  width: 100%;
+  color: var(--black-color-2);
   font-size: 60px;
-  padding: 0 7rem;
   text-align: center;
   -webkit-text-stroke: 1px var(--color-text-light);
   text-shadow: 3px 3px 0 #fffefe37, -3px 3px 5px var(--purple-color),
-    -3px -3px 0 #efebeb4a, 3px -3px 10px #000;
+    -3px -3px 0 var(--shadow-title), 3px -3px 10px var(--black-color);
 }
 .button-container-home {
   margin: 2rem 0.5rem;
@@ -47,10 +48,10 @@
   padding: 0.5rem;
   border-radius: 8px;
   border: none;
-  background-color: #b5121d;
+  background-color: var(--red);
   /* background-color: var(--purple-color); */
-  color: #fff;
-  -webkit-text-stroke: 0.3px #fff;
+  color: white;
+  -webkit-text-stroke: 0.3px white;
   /* color: var(--color-text-light); */
   font-weight: bold;
   font-size: 18px;
@@ -58,7 +59,7 @@
   transition: all 0.3s;
 }
 .home-button:hover {
-  background-color: #86060f;
+  background-color: var(--shadow-red);
 }
 @media screen and (max-width: 750px) {
   .home-title {
