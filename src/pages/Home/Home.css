@@ -37,7 +37,7 @@
     -3px -3px 0 var(--shadow-title), 3px -3px 10px var(--black-color);
 }
 .button-container-home {
-  margin: 2rem 0.5rem;
+  margin: 4rem 0.5rem;
   display: flex;
   width: 100%;
   justify-content: center;

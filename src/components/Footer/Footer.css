@@ -16,11 +16,8 @@ footer {
   width: 100%;
   position: absolute;
   bottom: 0;
-  /* position: fixed;
-  bottom: 0;
-  left: 0; */
 }
 footer > p {
   text-align: start;
-  margin: 10px;
+  margin: 6px;
 }
