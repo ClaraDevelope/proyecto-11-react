@@ -7,7 +7,6 @@ import Button from '../../components/Button/Button'
 import Title from '../../components/Title/Title'
 import Footer from '../../components/Footer/Footer'
 import Loading from '../../components/Loading/Loading'
-// Esta página se actualiza bien pero no tiene rutas de paginación-
 const Comics = () => {
   const [comics, setComics] = useState([])
   const [totalResults, setTotalResults] = useState(0)
