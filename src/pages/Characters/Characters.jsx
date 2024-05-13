@@ -4,7 +4,7 @@ import Card from '../../components/Card/Card'
 import Loading from '../../components/Loading/Loading'
 import Title from '../../components/Title/Title'
 import { hash, publicKey, timestamp } from '../../utils/constants'
-import Footer from '../../components/Footer/Footer'
+
 // Esta página tiene rutas de paginación pero no funciona bien puesto que no se actualiza la página
 const Characters = () => {
   const [character, setCharacter] = useState([])
@@ -78,7 +78,6 @@ const Characters = () => {
           className='button'
         />
       </div>
-      <Footer />
     </div>
   )
 }

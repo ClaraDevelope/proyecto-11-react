@@ -1,5 +1,5 @@
 import Button from '../../components/Button/Button'
-import Footer from '../../components/Footer/Footer'
+
 import './Home.css'
 
 const Home = () => {
@@ -10,7 +10,6 @@ const Home = () => {
         <Button text='Characters' link='/characters' className='home-button' />
         <Button text='Comics' link='/comics' className='home-button' />
       </div>
-      <Footer />
     </div>
   )
 }

@@ -5,7 +5,7 @@ import './Comics.css'
 import { hash, publicKey, timestamp } from '../../utils/constants'
 import Button from '../../components/Button/Button'
 import Title from '../../components/Title/Title'
-import Footer from '../../components/Footer/Footer'
+
 import Loading from '../../components/Loading/Loading'
 const Comics = () => {
   const [comics, setComics] = useState([])
@@ -78,7 +78,6 @@ const Comics = () => {
           className='button'
         />
       </div>
-      <Footer />
     </div>
   )
 }
