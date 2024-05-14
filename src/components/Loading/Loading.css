@@ -1,7 +1,11 @@
 .loading-container {
-  position: absolute;
-  top: 70px;
-  left: 35%;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #loading {
   width: 100%;
@@ -11,11 +15,7 @@
 }
 @media screen and (max-width: 750px) {
   .loading-container {
-    position: absolute;
-    top: 25%;
-    bottom: 0;
-    left: 25%;
-    width: 200px;
+    width: 300px;
     max-height: 200px;
   }
 }

@@ -4,6 +4,7 @@ import Card from '../../components/Card/Card'
 import Loading from '../../components/Loading/Loading'
 import Title from '../../components/Title/Title'
 import { hash, publicKey, timestamp } from '../../utils/constants'
+import Filter from '../../components/Filter/Filter'
 
 // Esta página tiene rutas de paginación pero no funciona bien puesto que no se actualiza la página
 const Characters = () => {
@@ -46,9 +47,30 @@ const Characters = () => {
     }
   }
 
+  const handleSearch = async (query) => {
+    try {
+      if (query === '') {
+        setOffset(0)
+      } else {
+        setLoading(true)
+        const response = await fetch(
+          `https://gateway.marvel.com/v1/public/characters?apikey=${publicKey}&ts=${timestamp}&hash=${hash}&nameStartsWith=${query}`
+        )
+        const data = await response.json()
+        setCharacter(data.data.results)
+        setTotalResults(data.data.total)
+      }
+    } catch (error) {
+      console.error('Error fetching data:', error)
+    } finally {
+      setLoading(false)
+    }
+  }
+
   return (
     <div className='principal'>
       <Title text={'Todos los personajes del Universo Marvel 🕷️'} />
+      <Filter onSearch={handleSearch} />
       <ul className='cards-container'>
         {loading ? (
           <Loading />

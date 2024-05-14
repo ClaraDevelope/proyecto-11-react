@@ -7,6 +7,7 @@ import Button from '../../components/Button/Button'
 import Title from '../../components/Title/Title'
 
 import Loading from '../../components/Loading/Loading'
+import Filter from '../../components/Filter/Filter'
 const Comics = () => {
   const [comics, setComics] = useState([])
   const [totalResults, setTotalResults] = useState(0)
@@ -45,10 +46,30 @@ const Comics = () => {
       setOffset(offset - limit)
     }
   }
+  const handleSearch = async (query) => {
+    try {
+      if (query === '') {
+        setOffset(0)
+      } else {
+        setLoading(true)
+        const response = await fetch(
+          `https://gateway.marvel.com/v1/public/comics?apikey=${publicKey}&ts=${timestamp}&hash=${hash}&nameStartsWith=${query}`
+        )
+        const data = await response.json()
+        setComics(data.data.results)
+        setTotalResults(data.data.total)
+      }
+    } catch (error) {
+      console.error('Error fetching data:', error)
+    } finally {
+      setLoading(false)
+    }
+  }
 
   return (
     <div className='principal'>
       <Title text={'Marvel Comics'}></Title>
+      <Filter onSearch={handleSearch} />
       <ul className='cards-container'>
         {loading ? (
           <Loading />
