@@ -22,8 +22,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           />
           <Route path='/comics' element={<Comics />} />
           <Route path='/comics/:id' element={<Details entityType='comics' />} />
+          <Route path='*' element={<NotFound />} />
         </Route>
-        <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
