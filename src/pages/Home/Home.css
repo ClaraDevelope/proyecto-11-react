@@ -14,14 +14,17 @@
 .home-container {
   overflow: hidden;
   max-width: 100%;
-  height: 86.4vh;
+  height: 85vh;
+  /* padding: 5.5px; */
+  padding: a;
+  margin: auto;
+  min-height: 85vh;
+  /* min-height: 87.5vh; */
   max-height: 100vh;
-  margin: 0;
-  padding: 0;
   background-image: url('https://www.todofondos.net/wp-content/uploads/marvel-4k-obra-de-arte-1440p-resolucion-hd-4k-fondo-de-pantalla.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -67,7 +70,8 @@
   }
   .home-container {
     justify-content: flex-start;
-    height: 79vh;
+    min-height: 87vh;
+    /* height: 79vh; */
     /* height: 650px; */
     /* height: 600px; */
   }
