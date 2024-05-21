@@ -1,16 +1,8 @@
-:root {
-  --button-color-bck: #ff7614;
-  --black-color: #0b0808;
-  --black-color-2: #181818;
-  --color-text-light: #d8d3d3;
-  --shadow-title: #efebeb4a;
-  --shadows-color: rgba(0, 0, 0, 0.75);
-  --purple-color: #65086f;
-  --bck-purple: rgba(82, 7, 87, 0.341);
-  --red: #b5121d;
-  --shadow-red: #86060f;
-}
 .card {
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+
   width: 250px;
   height: 300px;
   display: flex;
@@ -22,12 +14,46 @@
   box-shadow: 2px 2px 5px 0px var(--shadows-color);
   cursor: pointer;
   transition: ease-in-out.5s;
+  /* transition: box-shadow 0.5s ease-in-out; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.card:hover::before {
+  border-color: #8418ff;
+  transform: scale(1.008);
+}
+
 .card-title {
-  padding: 0.5rem;
+  width: 100%;
+  height: 0px;
+  padding: 0;
+  overflow: hidden;
   text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--color-text-ligh);
+  font-size: 1.3rem;
+  transition: height 0.5s ease, padding 0.5s ease;
+  transition: all 0.5s ease;
 }
+
 .image-container {
+  position: relative;
   border-radius: 20px;
   max-height: 180px;
   max-width: 200px;
@@ -39,8 +65,7 @@
   object-fit: cover;
 }
 
-.card:hover {
-  box-shadow: 0 0 1px #ffffffab, 0 0 5px #ffffffb2, 0 0 5px #ffffffb1,
-    0 0 10px #8418ff, 0 0 8px #49ff18, 0 0 8px #8418ff, 0 0 8px #8418ff,
-    0 0 10px #8418ff, 2px 2px 2px rgba(206, 89, 55, 0);
+.card:hover > .image-container > .card-title {
+  height: 40px;
+  padding: 0.5rem;
 }
