@@ -12,10 +12,12 @@
   --red: #b5121d;
   --shadow-red: #86060f;
 }
+
 * {
   margin: 0;
   padding: 0;
   font-family: 'News Cycle', sans-serif;
+  box-sizing: border-box;
 }
 a {
   text-decoration: none;
@@ -23,16 +25,13 @@ a {
   cursor: pointer;
 }
 body {
-  /* height: 100%; */
   margin: 0;
-  /* position: relative; */
-  min-height: 100vh;
-  /* margin: 0; */
-  /* padding: 0; */
+  height: 100vh;
   background-image: url('https://i.pinimg.com/236x/45/e2/1e/45e21e656f1fbc081c24188a4d638625.jpg');
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 /* #root {
-  min-height: 100vh;
+  height: 100svh;
 } */
