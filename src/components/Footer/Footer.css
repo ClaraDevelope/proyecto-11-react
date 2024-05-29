@@ -1,16 +1,24 @@
-footer {
+/* footer {
   color: var(--color-text-light);
   -webkit-text-stroke: 0.5px var(--color-text-light);
   width: 100%;
   position: relative;
-  margin-top: -30px;
+  margin-top: -37px;
+} */
+footer {
+  color: var(--color-text-light);
+  -webkit-text-stroke: 0.5px var(--color-text-light);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 footer > p {
   text-align: start;
-  margin: 6px;
+  padding: 6px;
 }
 @media screen and (max-width: 550px) {
   footer > p {
     text-align: center;
+    font-size: 14px;
   }
 }

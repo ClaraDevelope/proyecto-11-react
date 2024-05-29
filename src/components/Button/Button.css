@@ -1,6 +1,6 @@
 .button-container {
   width: 500px;
-  padding: 2.5rem 0rem;
+  padding: 3rem 0rem;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -28,4 +28,9 @@ button:disabled {
 }
 .button:focus {
   box-shadow: 3px 3px 5px 0px var(--shadows-color);
+}
+@media screen and (max-width: 550px) {
+  .button {
+    margin-bottom: 1.5rem;
+  }
 }

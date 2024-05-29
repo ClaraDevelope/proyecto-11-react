@@ -25,13 +25,18 @@ a {
   cursor: pointer;
 }
 body {
+  position: relative;
   margin: 0;
-  height: 100vh;
-  background-image: url('https://i.pinimg.com/236x/45/e2/1e/45e21e656f1fbc081c24188a4d638625.jpg');
+  padding: 0;
+  min-height: 100vh;
+  /* margin: 0;
+  height: 100vh; */
+  /* background-image: url('https://i.pinimg.com/236x/45/e2/1e/45e21e656f1fbc081c24188a4d638625.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* #root {
-  height: 100svh;
-} */
+#root {
+  max-width: 100%;
+  overflow-x: hidden;
+}
