@@ -2,7 +2,6 @@
   position: relative;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
-
   width: 250px;
   height: 300px;
   display: flex;
@@ -14,7 +13,6 @@
   box-shadow: 2px 2px 5px 0px var(--shadows-color);
   cursor: pointer;
   transition: ease-in-out.5s;
-  /* transition: box-shadow 0.5s ease-in-out; */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card::before {
@@ -68,4 +66,10 @@
 .card:hover > .image-container > .card-title {
   height: 40px;
   padding: 0.5rem;
+}
+@media screen and (max-width: 300px) {
+  .card {
+    width: 150px;
+    height: 200px;
+  }
 }
