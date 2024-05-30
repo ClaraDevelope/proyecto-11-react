@@ -1,6 +1,6 @@
 .loading-container {
-  position: fixed;
-  top: 30%;
+  position: absolute;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -17,5 +17,10 @@
   .loading-container {
     width: 300px;
     max-height: 200px;
+  }
+}
+@media screen and (max-width: 335px) {
+  .loading-container {
+    top: 45%;
   }
 }
